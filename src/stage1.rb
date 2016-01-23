@@ -1,11 +1,11 @@
 class Stage1 < Chingu::GameState
-  STAGE_MUSIC = ""
+  STAGE_MUSIC = "ewj_downthetubes.m4a"
   
   def initialize
     super
     self.input = {:escape => :close}
     spawn_player
-    @stage_music = nil # Gosu::Song[STAGE_MUSIC]
+    @stage_music = nil #Gosu::Song[STAGE_MUSIC]
   end
 
   def setup

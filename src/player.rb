@@ -16,7 +16,7 @@ class Player < Chingu::GameObject
     @init_color = @color
     @thrust_sound = Gosu::Sound[THRUST_SOUND]
     @missile = Missile
-    @shot_type = :explosive
+    @shot_type = :wave
     @rapid_shot = false
     
     self.input = {:holding_left => :turn_left,

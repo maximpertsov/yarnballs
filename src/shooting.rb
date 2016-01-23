@@ -8,9 +8,10 @@ module Shooting
     self.basic_shot
   end
 
+  # FIX THIS TO TAKE A CANNON ANGLE PARAMETER
   def wave_shot
     (-4..4).each do |angle_offset|
-      self.basic_shot(:angle => 10 * angle_offset + @angle)
+      self.basic_shot(:angle => 10 * angle_offset + @angle + 90)
     end
   end
 
